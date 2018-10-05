@@ -42,8 +42,8 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #flex-container {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
 }
+
 #footer {
   background-color: #444;
   color: #fff;
@@ -107,7 +107,7 @@ nav h1 a {
 }
 /* ====================== Map ====================== */
 #map {
-  height: 400px;
+  height: 100%;
   width: 100%;
   background-color: #ccc;
 }
@@ -209,7 +209,7 @@ nav h1 a {
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 87%;
+  height: 400px;
 	display: block;
   width: 50%;
 }
@@ -221,10 +221,10 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 50%;
+  width: 100%;
 }
 #restaurant-name {
-  color: #f18200;
+  color: rgb(46,120,87);
   font-family: Arial,sans-serif;
   font-size: 20pt;
   font-weight: 200;
@@ -264,7 +264,7 @@ nav h1 a {
   padding: 30px 40px 80px;
 }
 #reviews-container h2 {
-  color: #f58500;
+  color: rgb(46,120,87);
   font-size: 24pt;
   font-weight: 300;
   letter-spacing: -1px;
@@ -306,5 +306,10 @@ nav h1 a {
 		max-width: 1150px;
 		margin-right: auto;
 		margin-left: auto;
+	}
+	.inside header {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 1150px;
 	}
 }
