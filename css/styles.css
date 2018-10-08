@@ -38,10 +38,12 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
+	width: 100%;
 }
 #flex-container {
 	display: flex;
 	flex-direction: column;
+	flex: 1;
 }
 
 #footer {
@@ -79,7 +81,7 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(100% - 80px);
+    width: 100%;
 }
 
 /* Display list items side by side */
@@ -107,7 +109,7 @@ nav h1 a {
 }
 /* ====================== Map ====================== */
 #map {
-  height: 100%;
+  height: 400px;
   width: 100%;
   background-color: #ccc;
 }
@@ -119,7 +121,7 @@ nav h1 a {
   align-items: center;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: no-wrap;
+	flex-wrap: nowrap;
 }
 .filter-options h2 {
   color: white;
@@ -201,6 +203,9 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
+.inside {
+	width: 100%;
+}
 .inside header {
   position: fixed;
   top: 0;
@@ -211,7 +216,7 @@ nav h1 a {
   background: blue none repeat scroll 0 0;
   height: 400px;
 	display: block;
-  width: 50%;
+  width: 100%;
 }
 .inside #map {
   background-color: #ccc;
@@ -257,11 +262,11 @@ nav h1 a {
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
+  padding: 140px 10px 30px;
   width: 100%;
 }
 #reviews-container {
-  padding: 30px 40px 80px;
+  padding: 30px 10px 80px;
 }
 #reviews-container h2 {
   color: rgb(46,120,87);
@@ -269,6 +274,7 @@ nav h1 a {
   font-weight: 300;
   letter-spacing: -1px;
   padding-bottom: 1pt;
+	max-width: 900px;
 }
 #reviews-list {
   margin: 0;
@@ -300,6 +306,20 @@ nav h1 a {
 		margin-left: auto;
 		width: 100%;
 	}
+	.filter-options {
+		min-width: 320px;
+		height: 30vh;
+		max-height: 145px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		flex: 1;
+	}
+	#map-container {
+		width: 100%;
+		max-width: 415px;
+	}
+	
 }
 @media screen and (min-width: 1250px) {
 	:root {
